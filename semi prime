@@ -1,0 +1,16 @@
+import math as m
+def isprime(p):
+    sq=int(m.sqrt(p))
+    res=1
+    for i in range(2,sq+1):
+        if(p%i==0):
+            return False
+    return True
+def semiprime(p):
+    sq=int(m.sqrt(p))
+    for i in range(2,sq+1s):
+        if(isprime(p) and isprime(p//i)):
+            return True
+    return False
+n=int(input())
+print(isprime(n))
