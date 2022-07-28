@@ -1,7 +1,6 @@
 import math as m
-i=2
 def lcm(a,b):
-    global i
+    i=2
     res=1
     while a>=i and b>=i:
         if a%2==0 and b%2==0:
