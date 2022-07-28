@@ -1,0 +1,15 @@
+import math as m
+i=2
+def lcm(a,b):
+    global i
+    res=1
+    while a>=i and b>=i:
+        if a%2==0 and b%2==0:
+            a=a//2
+            b=b//2
+            res=res*i
+        else:
+            i+=1
+    return res*a*b
+a,b=map(int,input().split())
+print(lcm(a,b))
