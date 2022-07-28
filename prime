@@ -1,0 +1,31 @@
+def prime(a,i=2):
+    if a==i:
+        return True
+    elif a%i==0:
+        return False
+    return prime(a,i+1)
+a=int(input())
+res=prime(a)
+print(res)
+
+
+
+
+
+
+import math as m
+i=2
+a=int(input())
+sq=int(m.sqrt(a))
+def prime(a):
+    global i
+    if i>sq:
+        return True
+    if a%i==0:
+        return False
+    else:
+        i=i+1
+        return prime(a)
+res=prime(a)
+print(res)
+
