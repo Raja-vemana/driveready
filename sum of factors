@@ -12,3 +12,24 @@ def lcm(a,b):
     return res*a*b
 a,b=map(int,input().split())
 print(lcm(a,b))
+
+
+
+with recursion
+
+t=2
+def lcm(a,b):
+    global t
+    res=1
+    if a<t or b<t:
+        return a*b
+    if a%2==0 and b%2==0:
+        a=a//2
+        b=b//2
+        res=t
+    else:
+        t+=1
+    return res*lcm(a,b) 
+
+a,b=map(int,input().split())
+print(lcm(a,b))
